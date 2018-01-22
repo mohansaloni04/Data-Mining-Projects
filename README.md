@@ -8,3 +8,6 @@ Following are the instructions to run the project
 3) Once the installation is done, open Jupyter Notebook and upload the two Python files and the dataset in the Jupyter Notebook.
 4) Execute the two python files.One is where every review is considered individually and for other, the review is aggregated on the basis of product ID and rating.
 
+The above instructions were to run the project without UI.
+
+To run the project with UI, follow the instruction ReadMe.txt
