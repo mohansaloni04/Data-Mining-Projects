@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--<link rel="stylesheet" href="../static/main.css">-->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	 <form method="POST" action="http://localhost:5000/output" id="myform">
+    	       <input name="starting_value" id="starting_value" value="" type="hidden">
+	 </form>
+
+    </head>
+
+    <body>
+        <div class='container'>
+            
+		<br><br>
+		<h4>Enter Product Description</h4>
+                <textarea  id="text_input" rows="10" cols="60" name=story ></textarea>
+                <br>
+                <a href=#  id=process_input><button class='btn btn-default'>Submit</button></a>
+        
+            <br>
+
+        </div>
+    <script>
+
+$('#process_input').on('click', function(){
+    $('#starting_value').val($('#text_input').val());
+    document.getElementById("myform").submit();
+});
+
+
+    </script>
+    </body>
+</html>
